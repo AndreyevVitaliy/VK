@@ -41,7 +41,7 @@ class User():
                                                                                 source_uid=self.id,
                                                                                 target_uids=target_uids,
                                                                                 access_token=self.token,
-                                                                                v=3.0
+                                                                                v=5.80
                                                                                             )
                                 )
         friends_list = list()
