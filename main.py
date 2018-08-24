@@ -35,11 +35,11 @@ class User():
         self.token = token
         self.url = 'https://vk.com/id{}'.format(id)
 
-    def __and__(self, target_uids):
-        # print(target_uids)
+    def __and__(self, target_uid):
+        # print(target_uid)
         response = requests.get('https://api.vk.com/method/friends.getMutual',  params=dict(
                                                                                 source_uid=self.id,
-                                                                                target_uids=target_uids,
+                                                                                target_uid=target_uid,
                                                                                 access_token=self.token,
                                                                                 v=5.80
                                                                                             )
